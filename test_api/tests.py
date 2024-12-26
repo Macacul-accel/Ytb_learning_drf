@@ -3,6 +3,10 @@ from test_api.models import User, Order
 from django.urls import reverse
 from rest_framework import status
 
+"""
+test fn need to have an explicit name
+"""
+
 # Create your tests here.
 class UserOrderTestCase(TestCase):
     def setUp(self):
@@ -28,4 +32,4 @@ class UserOrderTestCase(TestCase):
 
     def test_user_order_list_unauthenticated(self):
         response = self.client.get(reverse('user-orders'))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
