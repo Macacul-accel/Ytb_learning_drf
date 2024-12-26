@@ -2,6 +2,27 @@ GET http://localhost:8000/products/ HTTP/1.1
 
 ### 
 
+GET http://localhost:8000/products/2/ HTTP/1.1
+
+### 
+
+DELETE http://localhost:8000/products/1/ HTTP/1.1
+
+### 
+
+PUT http://localhost:8000/products/2/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MjMzODU3LCJpYXQiOjE3MzUyMzM1NTcsImp0aSI6IjFhMmYyNWI3ZTU3MDRmOTU5MmU4NjZjZjc3NTVlZTI1IiwidXNlcl9pZCI6MX0.cakcVsw9SIZMsVtAVALuDJGo9utwUVVB552jHwKCaP4
+
+{
+    "name": "Television",
+    "price": 300.00,
+    "stock": 14,
+    "description": "An amazing new TV"
+}
+
+### 
+
 POST http://localhost:8000/products/ HTTP/1.1
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MjMyMjM3LCJpYXQiOjE3MzUyMzE5MzcsImp0aSI6IjEyZTQ2YjA2Yzc2MDRiYTk5NTBjZWUxZWQ3OTE2Njk1IiwidXNlcl9pZCI6Mn0.kGxSJHNgrdovNH50YgizsukE1wlTXk4_zdaRflr-b5U
