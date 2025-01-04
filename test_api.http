@@ -57,3 +57,8 @@ Content-Type: application/json
 {
     "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczNTMxODkxNywiaWF0IjoxNzM1MjMyNTE3LCJqdGkiOiIwNGJjM2M3YTdjZjk0MDkyODE0NDZiNTE0YTA3OTAwMSIsInVzZXJfaWQiOjF9.JT1RXrlvL8dtfsbJBHPvaWy6roNyVx6SkG3iAwNpank"
 }
+
+###
+
+GET http://localhost:8000/orders/ HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MzIwMDkxLCJpYXQiOjE3MzUzMTk3OTEsImp0aSI6IjZiYjJjMjdkYzM4YjRkOWI4OWVhMGEwNmU4YWJmMTlkIiwidXNlcl9pZCI6MX0.lNd43Q9BNK23xrFyN-7wKTit5LE4j01HZzwMIlm1a3Q
